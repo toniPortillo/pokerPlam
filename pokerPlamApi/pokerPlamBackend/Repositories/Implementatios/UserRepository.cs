@@ -3,7 +3,7 @@ using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PokerPlamApi.Repositories
+namespace PokerPlamApi.Repositories.Implementations
 {
   public class UserRepository
   {

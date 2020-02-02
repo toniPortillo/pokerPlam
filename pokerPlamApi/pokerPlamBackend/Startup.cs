@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
 using PokerPlamApi.Models;
-using PokerPlamApi.Repositories;
+using PokerPlamApi.Repositories.Implementations;
 
 
 namespace pokerPlamBackend
