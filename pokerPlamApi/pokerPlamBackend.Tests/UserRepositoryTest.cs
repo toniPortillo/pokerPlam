@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using Moq;
 using PokerPlamApi.Models;
 using PokerPlamApi.Repositories;
 
@@ -17,9 +18,10 @@ namespace PokerPlamApi.UnitTests.Services
         }
 
         [Fact]
-        public void Test1()
+        public void Get_returnTrue(string id)
         {
-
+            var result = _userRepository.Get("5e36fade083a65569765297a");
+            Assert.Null(result);
         }
     }
 }
