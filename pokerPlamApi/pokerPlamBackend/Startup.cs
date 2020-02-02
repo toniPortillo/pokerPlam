@@ -9,7 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Logging;
+using PokerPlamApi.Models;
+using PokerPlamApi.Repositories;
+
 
 namespace pokerPlamBackend
 {
@@ -25,7 +29,16 @@ namespace pokerPlamBackend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.Configure<PokerPlamDatabaseSettings>(
+                Configuration.GetSection(nameof(PokerPlamDatabaseSettings)));
+
+            services.AddSingleton<IPokerPlamDatabaseSettings>(sp => 
+                sp.GetRequiredService<IOptions<PokerPlamDatabaseSettings>>().Value);
+
+            services.AddSingleton<UserRepository>();
+
+            services.AddControllers()
+                .AddNewtonsoftJson(options => options.UseMemberCasing());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
