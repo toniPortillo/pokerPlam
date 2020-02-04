@@ -1,4 +1,5 @@
 using PokerPlamApi.Models;
+using PokerPlamApi.Repositories;
 using PokerPlamApi.Repositories.Implementations;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ namespace PokerPlamApi.Controllers
   [ApiController]
   public class UsersController : ControllerBase
   {
-    private readonly UserRepository _userRepository;
+    private readonly IUserRepository _userRepository;
 
-    public UsersController(UserRepository userRepository)
+    public UsersController(IUserRepository userRepository)
     {
       _userRepository = userRepository;
     }
