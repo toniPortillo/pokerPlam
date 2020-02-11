@@ -36,10 +36,8 @@ namespace pokerPlamBackend
             services.AddSingleton<IPokerPlamDatabaseSettings>(sp => 
                 sp.GetRequiredService<IOptions<PokerPlamDatabaseSettings>>().Value);
 
-            //services.AddSingleton<UserRepository>();
-
-            //services.Add(new ServiceDescriptor(typeof(IUserRepository), new UserRepository()));
             services.AddSingleton<IUserRepository, UserRepository>();
+            
             services.AddControllers()
                 .AddNewtonsoftJson(options => options.UseMemberCasing());
         }

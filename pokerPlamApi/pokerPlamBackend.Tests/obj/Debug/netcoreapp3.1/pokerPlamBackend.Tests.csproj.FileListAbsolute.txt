@@ -107,3 +107,9 @@
 /home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll
 /home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
 /home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/SharpCompress.dll
+/home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/Castle.Core.dll
+/home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/FluentAssertions.dll
+/home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/Moq.dll
+/home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/home/toni/Documentos/tfg/pokerPlam/pokerPlamApi/pokerPlamBackend.Tests/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll

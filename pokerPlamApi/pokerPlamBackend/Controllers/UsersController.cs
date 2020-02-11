@@ -1,10 +1,9 @@
 using PokerPlamApi.Models;
 using PokerPlamApi.Repositories;
-using PokerPlamApi.Repositories.Implementations;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace PokerPlamApi.Controllers
+namespace pokerPlamBackend.Controllers
 {
   [Route("api/[Controller]")]
   [ApiController]
